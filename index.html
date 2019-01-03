@@ -1,1 +1,410 @@
-<h1>Hello, world!</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Abhijith Asok</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900,700,400italic" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap4-charming.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+
+</head>
+<style>
+ul.timeline {
+list-style-type: none;
+position: relative;
+}
+ul.timeline:before {
+content: ' ';
+background: #d4d9df;
+display: inline-block;
+position: absolute;
+left: 29px;
+width: 2px;
+height: 100%;
+z-index: 400;
+}
+ul.timeline > li {
+margin: 20px 0;
+padding-left: 20px;
+}
+ul.timeline > li:before {
+content: ' ';
+background: white;
+display: inline-block;
+position: absolute;
+border-radius: 50%;
+border: 3px solid #22c0e8;
+left: 20px;
+width: 20px;
+height: 20px;
+z-index: 400;
+}
+.circle {
+padding: 13px 20px;
+border-radius: 50%;
+background-color: #ED8D8D;
+color: #fff;
+max-height: 50px;
+z-index: 2;
+}
+
+.how-it-works.row .col-2 {
+align-self: stretch;
+}
+.how-it-works.row .col-2::after {
+content: "";
+position: absolute;
+border-left: 3px solid #ED8D8D;
+z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+height: 50%;
+left: 50%;
+top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+height: 100%;
+left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+height: 50%;
+left: 50%;
+top: 0;
+}
+
+
+.timeline div {
+padding: 0;
+height: 40px;
+}
+.timeline hr {
+border-top: 3px solid #ED8D8D;
+margin: 0;
+top: 17px;
+position: relative;
+}
+.timeline .col-2 {
+display: flex;
+overflow: hidden;
+}
+.timeline .corner {
+border: 3px solid #ED8D8D;
+width: 100%;
+position: relative;
+border-radius: 15px;
+}
+.timeline .top-right {
+left: 50%;
+top: -50%;
+}
+.timeline .left-bottom {
+left: -50%;
+top: calc(50% - 3px);
+}
+.timeline .top-left {
+left: -50%;
+top: -50%;
+}
+.timeline .right-bottom {
+left: 50%;
+top: calc(50% - 3px);
+}
+</style>
+
+<body>
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#!">Abi Asok</a>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#!">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#!">Disabled</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav> -->
+
+  
+ 
+
+
+    <div class="container shadow-lg border my-4">
+      <!-- <img src='img/profile.jpeg' height=200 class="rounded-circle mx-auto d-block"> -->
+      <div class="ml-5 mr-5 mt-4 pt-4">
+           <img src='img/Slide1.png' height=200 class="mx-auto d-block">
+
+    <div class="row mt-3">
+      <div class="btn-group mx-auto">
+        <a href="#about" class="btn btn-sm btn-outline-info">About</a>
+        <a href="#experience" class="btn btn-sm btn-outline-info">Experience</a>
+        <a href="#education" class="btn btn-sm btn-outline-info">Education</a>
+        
+        <!-- <a href="#!" class="btn btn-sm btn-outline-info">Portfolio</a> -->
+        <a href="files/resume.pdf" target="_blank" class="btn btn-sm btn-outline-info">Resume</a>
+        <a href="#contact" class="btn btn-sm btn-outline-info">Contact</a>
+
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="btn-group mx-auto">
+        <a href="https://github.com/abhijith-asok" target="_blank"><i class="fab fa-github-square text-dark"></i></a>
+        <a href="https://www.linkedin.com/in/abhijith-asok-50314330/" target="_blank"><i class="fab fa-linkedin ml-2 text-dark"></i></a>
+        <a href="https://www.facebook.com/abhijith.asok.31" target="_blank"><i class="fab fa-facebook-square ml-2 text-dark"></i></a>
+        <a href="https://twitter.com/abhijithasok" target="_blank"><i class="fab fa-twitter-square ml-2 text-dark"></i></a>
+      </div>
+    </div>
+    <hr class="my-3" style="max-width: 320px">
+
+        <div id="about" class="mt-5">
+          <h3 class="text-left">
+            About
+          </h3>
+          <!-- <hr class="my-3" style="max-width: 100px"> -->
+          <div class="row">
+            <div class="col-md-6">
+              <p class="">
+                Data scientist with experience across the corporate, social and research arms of data science. I had
+                the
+                chance to set
+                up and lead a data team, wherein I mentored over 30 volunteers into data science for social good. I am
+                particularly
+                interested in the resonance between real world problems and data-powered solution.<br><br>
+              </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+              <h6 class="text-left py-0 my-0">Machine Learning</h6>
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              </div>
+
+              <h6 class="text-left py-0 my-0">Data Analytics</h6>
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              </div>
+
+              <h6 class="text-left py-0 my-0">Dashboard Development</h6>
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              </div>
+
+              <h6 class="text-left py-0 my-0">Visualization</h6>
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="experience" class="mt-5">
+          <h3 class="text-left">
+            Experience
+          </h3>
+          <div class="container mt-4">
+                <ul class="timeline">
+                  <li>
+                    <a target="_blank" href="https://www.hsph.harvard.edu/xlin/">Harvard University</a>
+                    <a href="#" class="float-right">Oct 2018 - Present</a><br>
+                    <p class="text-muted text-italics">Research Assistant</p>
+                    <p>Working with Dr. Xihong Lin's research group, developing a unique functional annotation tool for vector representation
+                    and querying of genetic variants.</p>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://www.mountsinai.org/">Mount Sinai Health System</a>
+                    <a href="#" class="float-right">June 2018 - Aug 2018</a><br>
+                    <p class="text-muted text-italics">Student Intern, Data Science</p>
+                    <p>Working with the Data Science team of the Arnhold Institute for Global Health. We are designing a deep learning
+                    solution based on Convolutional Neural Networks that can be fed in aerial drone images from third world countries to be
+                    able to detect abandoned tires in them. Abandoned tires are a health hazard, since mosquitoes can breed in the water
+                    that accumulates inside them, leading to the spread of many vector-borne diseases such as Malaria, Dengue fever, yellow
+                    fever etc.</p>
+                  </li>
+                  <li>
+                    <a target="_blank" href="http://safecity.in/">Safecity</a>
+                    <a href="#" class="float-right">Aug 2015 - Aug 2017</a><br>
+                    <p class="text-muted text-italics">Head Data Scientist</p>
+                    <p>Safecity is a non-profit based out of Mumbai, India which crowd maps data on gender-based harassment and uses
+                    innovative Data Analytics to combat it. With active partners in multiple countries such as Kenya, Cameroon and Nepal to
+                    collect data on a global scale and collaborations with Twitter and UPenn, Safecity works closely with the Police forces
+                    of multiple cities to enable it's unique data and analytics to create a difference in a dire cause.</p>
+                  </li>
+                  <li>
+                    <a target="_blank" href="http://www.globaledgesoft.com/">Global Eagle</a>
+                    <a href="#" class="float-right">Mar 2017 - May 2017</a><br>
+                    <p class="text-muted text-italics">Remote Data Scientist</p>
+                    <p>Created a dynamic network intelligence data visualisation dashboard on Tableau aimed at network optimization and a
+                    long-term organizational saving of $7m. Initiated a bandwidth prediction machine learning project based on historical data.</p>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://www.omaxe.com/">Omaxe Limited</a>
+                    <a href="#" class="float-right">Aug 2016 - Jan 2017</a><br>
+                    <p class="text-muted text-italics">Remote Data Scientist</p>
+                    <p>Worked with the COO to optimize construction material purchases through price tracking, time series forecasting and
+                    report automation. I was able to cut down the daily dashboarding time from 4-5 hours to under 2 minutes using
+                    end-to-end automation.</p>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://www.zs.com/">ZS Associates</a>
+                    <a href="#" class="float-right">Jul 2015 - Jul 2016</a><br>
+                    <p class="text-muted text-italics">Business Analyst</p>
+                    <p>ZS Associates is a global sales and marketing Consultancy based out of Evanston, US primarily focusing on broad
+                    analytics for Pharmaceutical Corporations. As a Business Analyst at ZS, I was involved in creating long-term strategy
+                    for an upcoming Business unit of a leading US-based Biotechnology and Pharmaceutical Corporation. For this, we
+                    dynamically extracted insights from highly descriptive text to create broad themes updated over time.</p>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://sakon.com/">GSG Teleco</a>
+                    <a href="#" class="float-right">Jan 2016 - Feb 2016</a><br>
+                    <p class="text-muted text-italics">Independent Consultant</p>
+                    <p>I offered my service to help with holistic segmentation and clustering of clientele based on telecommunication
+                    parameters. Cluster bootstrapping with resampling cycles were employed on multiple clustering algorithms to achieve
+                    this</p>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://www.mu-sigma.com/">Mu Sigma</a>
+                    <a href="#" class="float-right">July 2014 - June 2015</a><br>
+                    <p class="text-muted text-italics">Intern, Analytical Research</p>
+                    <p>Mu Sigma is one of the world's leading pure play provider of Analytics. I was an intern in the Analytical Research wing
+                    of Mu Sigma for a year. The Analytical Research team worked behind the scenes of muRx, Mu Sigma's flagship Decision
+                    Sciences workbench, which is an all-in-one analytical solution based on SAS and R, to perform everything from data
+                    cleaning to complex analysis and report creation.</p>
+                  </li>
+
+                  
+                </ul>
+
+          </div>
+        </div>
+
+        <div id="education" class="mt-5">
+          <h3 class="text-left">
+            Education
+          </h3>
+          <div class="mt-4">
+            <div class="container">
+              
+              <!--first section-->
+              <div class="row align-items-center how-it-works d-flex">
+                <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+                  <div class="circle font-weight-bold">3</div>
+                </div>
+                <div class="col-6">
+                  <h5>Harvard University</h5>
+                  <p>Master of Science - Health Data Science</p>
+                  <p class="text-muted">2017 - 2019</p>
+                </div>
+              </div>
+              <!--path between 1-2-->
+              <div class="row timeline">
+                <div class="col-2">
+                  <div class="corner top-right"></div>
+                </div>
+                <div class="col-8">
+                  <hr />
+                </div>
+                <div class="col-2">
+                  <div class="corner left-bottom"></div>
+                </div>
+              </div>
+              <!--second section-->
+              <div class="row align-items-center justify-content-end how-it-works d-flex">
+                <div class="col-6 text-right">
+                  <h5>BITS Pilani K K Birla Goa Campus</h5>
+                  <p>Bachelor of Engineering (Hons.) + MSc. (Hons.), Electrical and Electronics Engineering, Mathematics</p>
+                  <p class="text-muted">2010 - 2015</p>
+                </div>
+                <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+                  <div class="circle font-weight-bold">2</div>
+                </div>
+              </div>
+              <!--path between 2-3-->
+              <div class="row timeline">
+                <div class="col-2">
+                  <div class="corner right-bottom"></div>
+                </div>
+                <div class="col-8">
+                  <hr />
+                </div>
+                <div class="col-2">
+                  <div class="corner top-left"></div>
+                </div>
+              </div>
+              <!--third section-->
+              <div class="row align-items-center how-it-works d-flex">
+                <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+                  <div class="circle font-weight-bold">1</div>
+                </div>
+                <div class="col-6">
+                  <h5>Loyol School, Thiruvananthapuram</h5>
+                  <p>ISC, ICSE, Science</p>
+                  <p class="text-muted">1997 - 2010</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        <div id="contact" class="my-5">
+          
+                  <h3 class="text-left">
+                    Contact
+                  </h3>
+                  <form action="https://formspree.io/abhijithasok@gmail.com" method="POST">
+                    <div class="row">
+                      <div class="col">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" name="name" class="form-control form-control-sm" id="name" placeholder="Enter name">
+  </div>
+  </div>
+  <div class="col">
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" name="email" class="form-control form-control-sm" id="email" aria-describedby="emailHelp" placeholder="Enter email">    
+    </div>
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea name="message" class="form-control form-control-sm" id="message" placeholder="Enter message"></textarea>
+  </div>
+  <button type="submit" value="Send" class="btn btn-primary">Submit</button>
+</form>
+        </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
