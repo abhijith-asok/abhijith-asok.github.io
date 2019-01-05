@@ -231,42 +231,126 @@ top: calc(50% - 3px);
                     <a target="_blank" href="https://www.hsph.harvard.edu/xlin/">Harvard University</a>
                     <a href="#" class="float-right">Oct 2018 - Present</a><br>
                     <p class="text-muted text-italics">Research Assistant</p>
-                    <p>Working with Dr. Xihong Lin's research group, developing a unique functional annotation tool for vector representation
-                    and querying of genetic variants.</p>
+                    <p>I am currently working with Dr. Xihong Lin's research group that focuses on statistical genetics and genomics. 
+                      We are undertaking a huge task of creating vector representations for known genetic variants and making them available to the general 
+                      public through a software portal.</p>
+                      <p>My specific task is to create the tool from scratch(front-end and back-end) and engineer the pipeline for 
+                          querying the required variants as per user input and returning the vector representations to them in tabular format and/or data visualisations 
+                          with options for download in multiple formats.</p>
+                    <p> <b>Tools and frameworks used :</b> R (with focus on Shiny), Google Cloud Platform</p>
                   </li>
                   <li>
                     <a target="_blank" href="https://www.mountsinai.org/">Mount Sinai Health System</a>
                     <a href="#" class="float-right">June 2018 - Aug 2018</a><br>
                     <p class="text-muted text-italics">Student Intern, Data Science</p>
-                    <p>Working with the Data Science team of the Arnhold Institute for Global Health. We are designing a deep learning
-                    solution based on Convolutional Neural Networks that can be fed in aerial drone images from third world countries to be
-                    able to detect abandoned tires in them. Abandoned tires are a health hazard, since mosquitoes can breed in the water
-                    that accumulates inside them, leading to the spread of many vector-borne diseases such as Malaria, Dengue fever, yellow
-                    fever etc.</p>
+                    <p>During the summer of 2018, I worked with the Data Science team of the Arnhold Institute for Global Health at the Mount Sinai Health System 
+                      in New York. It is a non-profit organization within the overarching Mount Sinai ecosystem that focuses on global health and epidemiologic 
+                      advancements in the developing world.</p>
+                      
+                    <p>My specific project, of which I was the sole owner, dealt with an innovative way of utilizing the data at hand. Mosquitoes were a health hazard 
+                      in the area and abandoned tires were attributed as a major contributor since it is very easy for water to be collected in them and act as 
+                      breeding sites for mosquitoes. To tackle that, we used data that consisted of a set of images(both RGB and Infrared) which were aerial shots 
+                      of multiple cities in Guatemala taken using drones. The preliminary dataset consisted of around 7000 images. In the time that was available, 
+                      I designed a preliminary deep learning solution based on Convolutional Neural Networks that accepted these images as input with bounding 
+                      box annotations for the abandoned tires and predicted the locations of abandoned tires in new drone images. The implementation was based on 
+                      the YOLO v3 algorithm, which was chosen for its efficiency to detect small objects, since each tire was a small object in each image. </p>  
+                      
+                    <p>One of the major challenges we faced was to decide whether bounding boxes should be of fixed size and if so, what the size should be. 
+                       This was particularly important since tires are small objects in comparison to the size of the image and the differences in size between 
+                       different types of tires aren't significant compared to the image size. To decide on an ideal bounding box size to cater to all tires,
+                       we identified one of the largest tires available for commercial vehicles in Guatemala and found out its dimensions. But to know how this
+                       translated into the size in the image, we had to know the drone flight altitude. For this, we identified freight trucks that were visible in the
+                       image and took out their actual dimensions, following which we used that in conjunction with dimensions in the image and the camera's focal length 
+                       to formulaically reverse engineer the drone altitude and derive ideal bounding box sizes. </p>
+
+                    <p> <b>Tools and frameworks used :</b> Python (with focus on keras, pandas, numpy) </p>
                   </li>
                   <li>
                     <a target="_blank" href="http://safecity.in/">Safecity</a>
                     <a href="#" class="float-right">Aug 2015 - Aug 2017</a><br>
                     <p class="text-muted text-italics">Head Data Scientist</p>
-                    <p>Safecity is a non-profit based out of Mumbai, India which crowd maps data on gender-based harassment and uses
-                    innovative Data Analytics to combat it. With active partners in multiple countries such as Kenya, Cameroon and Nepal to
-                    collect data on a global scale and collaborations with Twitter and UPenn, Safecity works closely with the Police forces
-                    of multiple cities to enable it's unique data and analytics to create a difference in a dire cause.</p>
-                  </li>
+                    <p>Safecity is a non-profit based out of Mumbai, India with partners in Nepal, Kenya, Cameroon, Nigeria, Malaysia, United States among others
+                       which crowd maps data on gender-based harassment and uses innovative Data Analytics to combat it. I set up Safecity's formal data team in 
+                       mid-2015 and led it for 2 years as it grew. Under my leadership, Safecity's data team attained structure and grew manifold with many new 
+                       successful initiatives taken up.</p>
+
+                    <p>One of the first and most influential initiatives I took up was to create a fresh dashboard based on the data that was collected by the organization. Initially 
+                       created using Advanced Ms Excel, the dashboard was very extensive, cutting across different harassment types, temporal variables such as day,
+                       week, month, and year as well as geographical locations down to zipcode. The highlight of the dashboard was that it was completely dynamic, and 
+                       would update itself fully on a regular basis as and when new data came in. This dashboard was regularly sent over to police forces and administration 
+                       on an interntaional level to impact beat patrol timings and influence policy-level changes and is still being updated and used today.</p>
+
+                    <p>One of the other major initiatives I led was the analysis of the organization's social media feed. We mined tweets and posts from the 
+                       organization's twitter and facebook feeds and extracted trends and patterns regarding what our followers were talking about, 
+                       how much impact our posts are able to make, what helps the cause and what does not and more. The analysis also expanded to basic NLP 
+                       on the text of the tweets and posts to mine more hidden insights. The Twitter analysis in particular was largely appreciated and was used 
+                       by the CEO at many international events and conferences to illustrate the power of social media in combating gender-based harassment.</p>
+                     
+                    <p>Further, over the course of 2 years, I mentored close to 30 entry level data analyst volunteers and trained them to mentor many more.
+                       In addition, I took the lead on the organization's collaborations with many major universities. Namely,
+                       <ul>
+                         <li>We partnered with Stanford University's CS 50 : 'Using Tech for Good' course where a group of students worked with us over a 
+                             semester to design a data-driven mobile interface. I was the liaison for the project and the lead from the organization.
+                         </li>
+                         <li>We had been working Dr. Susan Sorenson and Lauren Gurfein at the Ortner Center for Family Violence at the University of Pennsylvania 
+                             to map street harassment in India. I took up the lead for the project and developed dynamic dashboards to help analyze the survey data
+                         </li>
+                         <li>We collaborated with Dr. Suzanne Lea at the University of Maryland to understand trends in transportation harassment in India. Our
+                             research culminated in a research <a href="https://link.springer.com/article/10.1057/s41300-017-0028-1">paper</a> in the Springer 
+                             journal called 'Crime Prevention and Community safety'
+                         </li>
+                       </ul>
+                    </p>
+
+                    <p> <b>Tools and frameworks used :</b> R, Python, MS Excel, Tableau </p>
+
+                      </li>
                   <li>
-                    <a target="_blank" href="http://www.globaledgesoft.com/">Global Eagle</a>
+                    <a target="_blank" href="http://www.globaleagle.com/">Global Eagle</a>
                     <a href="#" class="float-right">Mar 2017 - May 2017</a><br>
                     <p class="text-muted text-italics">Remote Data Scientist</p>
-                    <p>Created a dynamic network intelligence data visualisation dashboard on Tableau aimed at network optimization and a
-                    long-term organizational saving of $7m. Initiated a bandwidth prediction machine learning project based on historical data.</p>
+                    <p>Global Eagle is an international networking firm that focuses on in-flight and in-ship networks and entertainment systems. I worked with 
+                       Global Eagle over the summer of 2017 in a project aimed at increasing the efficiency of bandwidth allocation.</p> 
+                       
+                       <p>The organization was looking at a potential research to understand the trends of usage of different kinds of apps and websites on their networks so that they could 
+                       optimize the allocation of bandwidth to prevent wastage. Using real-time usage data as input and cloud infrastructure, I created an 
+                       extensive interactive dashboard on Tableau that enabled users within the organization to track usage patterns and make bandwidth allocation 
+                       decisions in real-time. The initiative was the first step towards planned organizational savings of $7 million in the short-term</p>
+                    
+                    <p> <b>Tools and frameworks used :</b> Tableau, Amazon Web Services(AWS) </p>
                   </li>
                   <li>
-                    <a target="_blank" href="https://www.omaxe.com/">Omaxe Limited</a>
+                    <a target="_blank" href="https://www.omaxe.com/">Omaxe</a>
                     <a href="#" class="float-right">Aug 2016 - Jan 2017</a><br>
-                    <p class="text-muted text-italics">Remote Data Scientist</p>
-                    <p>Worked with the COO to optimize construction material purchases through price tracking, time series forecasting and
-                    report automation. I was able to cut down the daily dashboarding time from 4-5 hours to under 2 minutes using
-                    end-to-end automation.</p>
+                    <p class="text-muted text-italics">Senior Data Scientist</p>
+                    <p>Omaxe is one of the leading real estate development firms in India that employs over a 1000 people with the number of contractors coming 
+                       out to be many times that number. I kick started Omaxe's data science initiatives by directly assisting the Chief Operating Officer of the 
+                       medium-sized firm.</p>
+                    
+                    <p>The COO was looking to optimize the purchase of construction materials on a daily basis based on the demand and the prices of each item till the 
+                       previous day. We implemented basic time series models on past data to forecast predictions and kept improving predictions as each day's data 
+                       came in. However, my biggest contribution to this role and to the organization came as an initiative I took up beyond my assigned roles. An 
+                       extensive dashboard was being manually created every day based on the data that comes in that day and was being passed on to 
+                       the COO so that she could understand trends and make decisions. I found this process extremely monotonous, inefficient and repetitive and 
+                       decided to try and improve it through automation. The following were the steps involved in the process:
+                       <ul>
+                         <li>The daily data came in as an attachment via an automatically generated email</li>
+                         <li>A dashboard with a fixed format had to be created based on this data and additional charts had to be generated</li>
+                         <li>The files had to be compressed into a zip</li>
+                         <li>The zip had to be emailed to the COO with metadata about the dashboard in the email body</li>
+                       </ul> 
+                      </p>
+                      <p>Utilizing a combination of R, Python, VBA, and MS Excel, I created a co-existing framework that identified that day's email in in my inbox,
+                         downloaded it, created a dashboard and charts from it, compressed the files and attached them and emailed them to the COO with supplementary 
+                         information. The framework was hosted on top of a task scheduler so that the entire process occurred seamlessly on its own every day morning.
+                      </p>
+
+                      <p><b>The initiative was well appreciated and it cut down the daily time involvement from 4-5 hours with 100% human involvement to under 2 
+                         minutes with 0 human involvement. The GitHub repo of the project can be found <a href="https://github.com/abhijith-asok/Report-management-automation-using-VBA-R-Python">here</a>.
+                      </b></p>
+
+                      <p> <b>Tools and frameworks used :</b> R, Python, VBA, MS Excel </p>
+                    
                   </li>
                   <li>
                     <a target="_blank" href="https://www.zs.com/">ZS Associates</a>
@@ -278,7 +362,7 @@ top: calc(50% - 3px);
                     dynamically extracted insights from highly descriptive text to create broad themes updated over time.</p>
                   </li>
                   <li>
-                    <a target="_blank" href="https://sakon.com/">GSG Teleco</a>
+                    <a target="_blank" href="https://sakon.com/">GSG Telco</a>
                     <a href="#" class="float-right">Jan 2016 - Feb 2016</a><br>
                     <p class="text-muted text-italics">Independent Consultant</p>
                     <p>I offered my service to help with holistic segmentation and clustering of clientele based on telecommunication
